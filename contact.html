@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Real Estate Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- K'Jhanae Brown - contact.html -->
+    <!-- Note: This page includes a contact form for users to get in touch with the company. -->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="listings.html">Listings</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Whether you have questions about our properties, need assistance with the buying process, or just want to chat about real estate, feel free to reach out to us.</p>
+            <p>You can contact us via email, phone, or by filling out the contact form below. Our team is dedicated to providing excellent service and will get back to you as soon as possible.</p>
+        </section>
+        
+        <section>
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <fieldset>
+                    <legend>Preferred Contact Method:</legend>
+                    <label for="contact-email">
+                        <input type="radio" id="contact-email" name="contact_method" value="email" checked>
+                        Email
+                    </label>
+                    <label for="contact-phone">
+                        <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                        Phone
+                    </label>
+                </fieldset>
+
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Subscribe to our newsletter
+                </label>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 K'Jhanae Brown</p>
+    </footer>
+</body>
+</html>
